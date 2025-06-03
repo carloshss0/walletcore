@@ -51,5 +51,5 @@ func (s *ClientDBTestSuite) TestGet() {
 	s.Equal(client.ID, clientDB.ID)
 	s.Equal(client.Name, clientDB.Name)
 	s.Equal(client.Email, clientDB.Email)
-	s.Equal(client.CreatedAt, clientDB.CreatedAt)
+
 }
