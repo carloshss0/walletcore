@@ -29,7 +29,7 @@ func main() {
 	defer db.Close()
 
 	configMap := ckafka.ConfigMap{
-		"bootstrap.servers": "kafka:29022",
+		"bootstrap.servers": "kafka:29092",
 		"group.id":          "wallet",
 	}
 	kafkaProducer := kafka.NewKafkaProducer(&configMap)
