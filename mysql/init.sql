@@ -25,3 +25,10 @@ CREATE TABLE IF NOT EXISTS transactions (
 );
 
 
+INSERT INTO clients (id, name, email, created_at) VALUES
+('123x431ffg', 'John', 'john@email.com', CURDATE()),
+('123x4141fa', 'Jane', 'jane@email.com', CURDATE());
+
+INSERT INTO accounts (id, client_id, balance, created_at) VALUES
+('acc1', '123x431ffg', 1000.00, CURDATE()),
+('acc2', '123x4141fa', 500.00, CURDATE());
