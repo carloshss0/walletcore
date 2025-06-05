@@ -4,11 +4,11 @@ WORKDIR /app/
 
 RUN apt-get update && apt-get install -y librdkafka-dev
 
-# COPY . .
+COPY . .
 
-# RUN go build -o walletcore cmd/walletcore/main.go
+RUN go build -o walletcore cmd/walletcore/main.go
 
-# CMD ["./walletcore"]
+CMD ["./walletcore"]
 
-CMD ["tail", "-f", "/dev/null"]
+# CMD ["tail", "-f", "/dev/null"]
 
