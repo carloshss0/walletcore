@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS accounts (
     client_id varchar(255),
     balance float,
     created_at date
-)
+);
 
 CREATE TABLE IF NOT EXISTS transactions (
     id varchar(255),
@@ -22,4 +22,6 @@ CREATE TABLE IF NOT EXISTS transactions (
     account_id_to varchar(255),
     amount float,
     created_at date
-)
+);
+
+
